@@ -1,23 +1,22 @@
 <template>
-  <header>
-    <nav>
-      <NuxtLink to="/">Nuxt crash</NuxtLink>
+   <header class="shadow-sm bg-white">
+    <nav class="container mx-auto p-4  flexjustify-between">
+       <NuxtLink to="/" class="font-bold">Nuxt crash</NuxtLink>
     </nav>
   </header>
-  <main>
+
+  <main class="container mx-auto p-4">
     <slot />
   </main>
-  <footer>
-    <ul>
+
+  <footer class="container mx-auto p-4">
+    <ul class="flex gap-4">
       <li><NuxtLink to="/">Home</NuxtLink></li>
       <li><NuxtLink to="/about">About</NuxtLink></li>
       <li><NuxtLink to="/products">Merch</NuxtLink></li>
     </ul>
   </footer>
 </template>
-<script setup >
-
-</script>
 
 
 <style scoped>
