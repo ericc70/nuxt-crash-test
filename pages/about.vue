@@ -12,11 +12,13 @@
       voluptatum cumque velit illum, quia magni, beatae ipsam vel nemo
       excepturi!
     </p>
+    <div> {{ data }}</div>
   </section>
 </template>
 
-<script>
-export default {};
+<script setup>
+   const {data} = await useFetch('./api/crash')
+
 </script>
 
 <style scoped>
